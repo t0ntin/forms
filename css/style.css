@@ -79,7 +79,8 @@ main {
 }
 
 .odin-logo {
-  width: calc(max(min(60px, 100%), 80px));
+  max-width: 18%;
+  min-width: 14%;
 }
 
 /* RIGHT SIDE */
@@ -125,13 +126,25 @@ input {
 
 input:focus {
   outline: none;
-  border: 2px solid rgb(4, 0, 255);
+  border: 2px solid blue;
   box-shadow: 1px 3px 5px -2px rgb(66, 66, 65);
 }
 
 label {
   font-size: 0.7rem;
   margin-bottom: 3px;
+}
+
+.error-message {
+  font-size:.8rem;
+  color: red;
+  font-weight: bold;
+}
+
+.passwords-match-message {
+  font-size:.8rem;
+  color: rgb(0, 100, 8);
+  font-weight: bold;
 }
 
 .create-acc-btn {
