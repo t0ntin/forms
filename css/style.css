@@ -52,7 +52,7 @@ main {
 }
 
 .left-side {
-  background-image: url(/images/background.jpg);
+  background-image: url(images/background.jpg);
   background-position: center;
   background-size: cover;
   font-family: "Monoton", cursive;
