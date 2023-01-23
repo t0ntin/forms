@@ -5,33 +5,38 @@
   list-style: none;
 }
 
-*::before, *::after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 :root {
-
+  --FORM-COLOR: rgb(201, 201, 201);
 }
 
 html {
-  height: 100%;
   font-family: "Lato", sans-serif;
-
 }
 
 body {
   height: 100vh;
-  background-color: hsla(0, 0%, 0%, 0.925);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: white;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -41,4 +46,114 @@ img {
   height: auto;
 }
 
+main {
+  display: flex;
+  background-color: rgb(230, 230, 230);
+}
 
+.left-side {
+  background-image: url(/images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: "Monoton", cursive;
+  font-size: 4rem;
+  display: flex;
+  height: 100vh;
+}
+
+.image-container {
+  padding-top: 20px;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 150px;
+  min-width: 35vw;
+}
+
+.image-container p {
+  color: white;
+  font-size: min(max(7vw, 30px), 4rem);
+}
+
+.odin-logo {
+  width: calc(max(min(60px, 100%), 80px));
+}
+
+/* RIGHT SIDE */
+
+.right-side {
+  padding-top: 80px;
+}
+
+.right-side p {
+  margin: 0px 0px 20px 20px;
+  max-width: 88%;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+legend {
+  margin: 30px 0px 20px 10px;
+  font-size: 1.2rem;
+}
+
+form {
+  padding-left: 1rem;
+  background-color: white;
+  width: 100%;
+  padding-bottom: 15px;
+  box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+  color: rgb(37, 37, 37);
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+input {
+  display: block;
+  border-radius: 5px;
+  height: 2rem;
+  border: 1px solid rgb(175, 175, 175);
+  padding: 5px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid rgb(4, 0, 255);
+  box-shadow: 1px 3px 5px -2px rgb(66, 66, 65);
+}
+
+label {
+  font-size: 0.7rem;
+  margin-bottom: 3px;
+}
+
+.create-acc-btn {
+  margin: 20px 0px 0px 15px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #596d48;
+  padding: 1rem 3rem;
+  box-shadow: 1px 3px 5px -2px rgb(53, 53, 53);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.bottom-section p {
+  font-size: 1.2rem;
+  color: black;
+  margin-top: 1rem;
+}
+
+a {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: bold;
+}
